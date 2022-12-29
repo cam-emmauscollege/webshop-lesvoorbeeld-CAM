@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+      "label": "update db",
+      "command": "if [ -f db/my.db ]; then sqlite3 db/my.db < db/create.sql", // Could be any other shell command,
+      "type": "shell"
+  }]
+}
