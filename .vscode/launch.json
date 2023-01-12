@@ -9,7 +9,7 @@
         "<node_internals>/**"
       ],
       "preLaunchTask": "update db",
-      "program": "${workspaceFolder}/server-app.js"
+      "program": "${workspaceFolder}/api/index.js"
     }
   ]
 }
