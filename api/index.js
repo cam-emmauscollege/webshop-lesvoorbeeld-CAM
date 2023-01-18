@@ -3,7 +3,7 @@
 // https://www.npmjs.com/package/better-sqlite3
 const Database = require('better-sqlite3');
 // all sql-statements will be sent to console for debug purpose
-const db = new Database('../db/my.db', { verbose: console.log });
+const db = new Database('db/my.db', { verbose: console.log });
 // onze code negeert errors in sql-commando's maar de database drukt errors af op de console
 
 // server, we use express because that is the most common package
@@ -22,7 +22,7 @@ app.use(
 )
 
 // defineer startpunt voor statische bestanden
-app.use(express.static('../web'))
+app.use(express.static('web'))
 
 // definieer startpunten voor de API-server
 app.get('/api/echo', echoRequest)
